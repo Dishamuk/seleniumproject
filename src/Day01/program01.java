@@ -12,6 +12,7 @@ public class program01 {
 		driver.get("https://demo.automationtesting.in/Register.html");
 		Select dropdownskill = new Select (driver.findElement(By.xpath("//select[@id='Skills']")));
 		dropdownskill.selectByIndex(2);
+		dropdownskill.selectByValue("Backup management");
 		// TODO Auto-generated method stub
 
 	}
