@@ -31,7 +31,7 @@ public class program03 {
 		public static void screenShot(String fileName) throws Exception
 		{
 			File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			File des= new File("./Pictures/"+fileName+".png");
+			File des= new File("./screenshot/"+fileName+".png");
 			FileUtils.copyFile(src, des);
 		}
 
